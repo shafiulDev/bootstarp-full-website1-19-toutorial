@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+<style>
+    .navhober:hover{
+        text-decoration:underline;
+    }
+    #height1{
+        height:100%;
+    }
+ 
+     @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    .devclass{
+            font-family: 'Righteous', cursive;
+    }
+    #feedback{
+        background:rgb(219, 219, 219);
+        padding:50px ;
+    }
+    hr{
+        border: 5px dotted rgb(53, 0, 243);
+        width: 80px;
+        border-bottom:none;
+    }
+    .carousel-indicators {
+        bottom:-45px;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon{background-color: blue;}
+</style>
+</head>
+<body>
+<!-- Header start -->
+    <div class="container ">
+        <header>
+            <nav class=" navbar navbar-expand-sm bg-primary navbar-dark ">
+          
+                <a href="#">
+                    <img class="rounded-circle" src="img/sl.jpg" alt="logo" style="height: 50px; width: 50px;">
+                </a>
+    
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto  ">
+                            <li class="nav-item "><a  class="active nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a  class="nav-link" href="#">Tiutorial</a></li>
+                            <li class="nav-item"><a  class="nav-link" href="#">contact</a></li>
+                            <li class="nav-item"><a  class="nav-link" href="#">About Me</a></li>
+                            <li class="nav-item"><a  class="nav-link" href="#">Help</a></li>
+                        </ul>
+                    </div>
+            </nav>
+        </header>
+        </div>
+<!-- Header end -->
+
+<!-- Start coding for a slider useing carousel -->
+<div class="container " >
+    <section id="feedback">
+        <div class="section-title ">
+            <h3 class="text-center devclass">My Best Friend</h3>
+           <hr class="hr-style">
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000" data-pause="hover">
+                    <ol class="carousel-indicators ">
+                      <li   data-target="#carouselExampleIndicators"  data-slide-to="0" class=" active bg-primary"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1" class=" bg-primary"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2" class=" bg-primary"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="3" class=" bg-primary"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active  text-center">
+                        <p>MY name is Md Shafiul Islam. I read in Rangpur Polytechnic Instiitute. The name of my departmernt is Computer.</p>
+                        <img src="img/shafiul.jpg" class="rounded-circle mb-2 img-fluid" style="width:250px; height: 250px;" alt="This is a image">
+                        <h5>Md Shafiul Islam</h5>
+                      </div>
+                      <div class="carousel-item text-center">
+                        <p>MY name is Md Sohrab Hossain. I read in Rangpur Polytechnic Instiitute. The name of my departmernt is Computer.</p>
+                        <img src="img/soharb.jpg" class="rounded-circle mb-2" style="width:250px; height: 250px;" alt="This is a image">
+                        <h5>Md Soharb Hossain</h5>
+                      </div>
+                      <div class="carousel-item text-center">
+                        <p>MY name is Md Pervez Hasan. I read in Rangpur Polytechnic Instiitute. The name of my departmernt is Computer.</p>
+                        <img src="img/parvez.jpg" class="rounded-circle mb-2" style="width:250px; height: 250px;" alt="This is a image">
+                        <h5>Md Pervez Hasan</h5>
+                      </div>
+                      <div class="carousel-item text-center">
+                        <p>MY name is Md Doyal Islam. I read in Rangpur Polytechnic Instiitute. The name of my departmernt is Computer.</p>
+                        <img src="img/doal.jpg" class="rounded-circle mb-2" style="width:250px; height: 250px;" alt="This is a image">
+                        <h5>Md doyel mia</h5>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+
+
+
+            </div>
+        </div>
+    </section>
+</div>
+<!-- End coding for a slider useing carousel -->
+
+<!-- This is a section start part -->
+    <div class="container text-center bg=light">
+      <h3 class="mb-3 font-weight-bolder">Searvice</h3>
+      <div class="row">
+          <div class="col-lg-3 col-md-4">
+              <i class=" bg-primary text-white fas fa-hands-helping fa-3x py-2 border rounded-circle"></i>      
+              <h5 class="text-uppercase"> Title name</h5>
+              <p class="text-muted small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolorem molestiae harum.</p>
+          </div>
+          <div class="col-lg-3 col-md-4">
+              <i class=" bg-primary text-white fas fa-hands-helping fa-3x py-2 border rounded-circle"></i>      
+              <h5 class="text-uppercase"> Title name</h5>
+              <p class="text-muted small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolorem molestiae harum.</p>
+          </div>
+          <div class="col-lg-3 col-md-4">
+              <i class=" bg-primary text-white fas fa-hands-helping fa-3x py-2 border rounded-circle"></i>      
+              <h5 class="text-uppercase"> Title name</h5>
+              <p class="text-muted small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolorem molestiae harum.</p>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <i class=" bg-primary text-white fas fa-hands-helping fa-3x py-2 border rounded-circle"></i>      
+            <h5 class="text-uppercase"> Title name</h5>
+            <p class="text-muted small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolorem molestiae harum.</p>
+        </div>
+
+      </div>
+<!-- The secton End -->
+
+
+
+<!-- About me section -->
+
+  <div class=" jumbotron pt-2">
+      <div class="main_row mt-2">
+          <h2 class="text-center mt-2 font-weight-bolder"> About Me</h2>
+          <div class="row">
+              <img src="img/small3.jpg" id="height1" class=" rounded-circle col-12 col-md-4"  alt=" Img">
+              <div class="col-12 col-md-8">
+                <p>Lorem ipsum doLorem ipsum dolor  amet oLorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam et eligendi necessitatibus illum odio provident, vero ratione atque eaque minus soluta. Quam sit impedit eum consequuntur dicta fugit voluptatibus harum! ipsum dolor sit amet consectetur adipisicing elit. Quod, magni debitis. Aspernatur maximeolor sit amet consectetur adipisicing elit. Accusamus, provident?lor sit amet consectetur adipisicing elit. Quisquam et eligendi necessitatibus illum odio provident, vero ratione atque eaque minus soluta. Quam sit impedit eum consequuntur dicta fugit voluptatibus harum! ipsum dolor sit amet consectetur adipisicing elit. Quod, magni debitis. Aspernatur maxime itaque nesciunt amet possimus vitae nemo soluta! ipsum dolor sit amet consectetur adipisicing elit. Accusamus, provident?</p>             
+               
+                 <!-- Tihs is collapse start -->
+                 <div class="mb-3 mt-0">
+                        <a href="#more" data-toggle="collapse" >Learn More</a>
+                        <div id="more" class="collapse">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt esse voluptas odit facere dolorem! Dolor fugiat sed nulla eveniet fuga vitae, saepe minus impedit nisi dignissimos adipisci est enim inventore officiis recusandae possimus totam rerum, delectus nostrum? Quae alias optio ipsum illo, aspernatur sequi ullam odit odio ipsam magnam sit! ipsum, dolor sit amet consectetur adipisicing elit. Libero nobis labore maiores ad cumque ratione debitis, veritatis hic quae laudantium.</p>
+                        </div>
+                 </div>
+
+<!-- This is collapase end -->
+
+                <div class="btn-group btn-toolbar mb-2">
+                    <button class=" btn btn-outline-secondary ">Downlode All</button>
+                    <button class=" btn btn-outline-secondary ">Downlode CV</button>
+                </div>
+                <div class=" alert alert-primary alert-dismissable">
+                    <button class=" close" data-dismiss="alert">&times;</button>
+                    Visit My Facebook page<a href="#">Click Here</a>
+                </div>
+                <div class=" alert alert-success alert-dismissable">
+                    <button class=" close" data-dismiss="alert">&times;</button>
+                    Visit My Instragram page<a href="#">Click Here</a>
+                </div>
+
+                </div>  
+          </div>
+      </div>
+
+    </div>
+</div>
+<div class="container">
+    <div class="heading text-center ">
+        <h2 class="font-weight-bold font-italic">Customer Reviwe</h2>
+    </div>
+    <div class="row text-center">
+        <div class=" col-lg-4">
+            <blockquote class=" blockquote" >
+                <i class=" p-2 fa-4x fas fa-user-circle"></i>
+                <div class="discus">
+                    <p>Lorem ipsum elit. imus harum. Iusto possimus fuga nulla assumenda aliquid ea similique tenetur harum voluptatem officia. Quasi vero reprehenderit cupiditate beatae quas illum quisquam assumenda nemo esse excepturi! Exercitationem, <abbr title="Hypr text transfer protocal">HTTP</abbr></p>
+                </div>
+                <footer class="blockquote-footer">Md Shafiul Ismal   <cite>FACEBOOK</cite></footer>
+            </blockquote>
+        </div>
+        <div class=" col-lg-4">
+            <blockquote class=" blockquote" >
+                <i class=" p-2 fa-4x fas fa-user-circle"></i>
+                <div class="discus">
+                    <p>Lorem ipsum elit. imus harum. Iusto possimus fuga nulla assumenda aliquid ea similique tenetur harum voluptatem officia. Quasi vero reprehenderit cupiditate beatae quas illum quisquam assumenda nemo esse excepturi! Exercitationem, <abbr title="Hypr text transfer protocal">HTTP</abbr></p>
+                </div>
+                <footer class="blockquote-footer">Md Shafiul Ismal   <cite>FACEBOOK</cite></footer>
+            </blockquote>
+        </div>
+        <div class=" col-lg-4">
+            <blockquote class=" blockquote" >
+                <i class=" p-2 fa-4x fas fa-user-circle"></i>
+                <div class="discus">
+                    <p>Lorem ipsum elit. imus harum. Iusto possimus fuga nulla assumenda aliquid ea similique tenetur harum voluptatem officia. Quasi vero reprehenderit cupiditate beatae quas illum quisquam assumenda nemo esse excepturi! Exercitationem, <abbr title="Hypr text transfer protocal">HTTP</abbr></p>
+                </div>
+                <footer class="blockquote-footer">Md Shafiul Ismal   <cite>FACEBOOK</cite></footer>
+            </blockquote>
+        </div>
+
+<!-- card coding start -->
+<div class="row">
+    <div class="col-lg-3 col-sm-6">
+        <div class="card">
+            <img class="card-img-top" src="img/sl2.jpg" alt="image">
+            <div class="card-body">
+                <h4 class="card-title"> This is a title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, fugit.</p>
+                <a href="#" class="card-link stretched-link">Click here</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+        <div class="card">
+            <img class="card-img-top" src="img/sl2.jpg" alt="image">
+            <div class="card-body">
+                <h4 class="card-title"> This is a title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, fugit.</p>
+                <a href="#" class="card-link stretched-link">Click here</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+        <div class="card">
+            <img class="card-img-top" src="img/sl2.jpg" alt="image">
+            <div class="card-body">
+                <h4 class="card-title"> This is a title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, fugit.</p>
+                <a href="#" class="card-link stretched-link">Click here</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+        <div class="card">
+            <img class="card-img-top" src="img/sl2.jpg" alt="image">
+            <div class="card-body">
+                <h4 class="card-title"> This is a title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, fugit.</p>
+                <a href="#" class="card-link stretched-link">Click here</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- card coding ends -->
+
+
+<div class="container">
+
+
+<!-- start the media class -->
+    <div class="text-center bg-primary p-3 ">
+        <h2 class="font-weight-bolder text-white">Programing Lover</h2>
+    </div>
+    <div class="media border p-4  mt-3">
+        <img style="width: 120px; height: 120px;" src="img/11.jpg" class="rounded-circle mr-3" alt=" image">
+        <div class="media-body">
+            <h5>I love Web Design</h5>
+            <p>Lorem ipsum dolor sit amet coor sit amet consectetur, adipisicing elit. Similiqueor sit amet consectetur, adipisicing elit. Similiquensectetur, adipisicing elit. Similique, impedit?</p>
+        </div>
+    </div>
+        <div class="media border p-4  mt-3">
+            <div class="media-body">
+                <h5>I love Web Design</h5>
+                <p>Lorem ipsum dolor sit amet coor sit amet consectetur, adipisicing elit. Similiqueor sit amet consectetur, adipisicing elit. Similiquensectetur, adipisicing elit. Similique, impedit?</p>   
+            </div>
+            <img style="width: 120px;  height: 120px;" src="img/11.jpg" class="rounded-circle mr-3" alt=" image">
+        </div>
+
+        <div class="media border p-4  mt-3">
+            <img style="width: 120px;  height: 120px;" src="img/11.jpg" class="rounded-circle mr-3 align-self-center" alt=" image">
+            <div class="media-body">
+                <h5>I love Web Design</h5>
+                <p>Lorem ipsum dolor sit amet coor sit amet consectetur, adipisicing elit. Similiqueor sit amet consectetur, adipisicing elit. Similiquensectetur, adipisicing elit. Similique, impedit?</p>   
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquid, ipsam accusantium, iste modi doloremque, voluptatum inventore architecto nesciunt tempore unde tenetur asperiores mollitia ducimus reprehenderit. Deserunt alias dolores est reiciendis sit nulla perferendis dolor, animi soluta nostrum maxime quasi ratione unde rem blanditiis labore odio officiis laboriosam ad quos fugiat et! Quam enim dolorem, quia qui ipsam sequi, amet sapiente tempore voluptatem est possimus? Adipisci quam dolore in sunt, voluptatem vitae incidunt ratione alias quae doloribus! Optio, non itaque. In, fuga soluta adipisci sit molestiae quo consectetur repellat excepturi animi eaque vitae eius cupiditate itaque. Impedit minus temporibus quibusdam?</p>
+            </div>         
+        </div>
+
+<!-- End the media class -->
+
+ <!-- start a table coding -->
+
+        <table class=" table table-striped table-bordered table-hover text-center table-info ">
+            <thead>
+                <th>Exam</th>
+                <th>Year</th>
+                <th>School name</th>
+                <th>Resusl</th>
+                <th>Bord</th>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SSC</td>
+                    <td>2015</td>
+                    <td>D G High school</td>
+                    <td>4.50/5.00</td>
+                    <td>Dinajpur</td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td>2015</td>
+                    <td>D G High school</td>
+                    <td>4.45/5.00</td>
+                    <td>Dinajpur</td>
+                </tr>
+                <tr>
+                    <td>Diploma in Engenier</td>
+                    <td>2015</td>
+                    <td>D G High school</td>
+                    <td>3.90/4</td>
+                    <td>Dinajpur</td>
+                </tr>
+          
+
+            </tbody>
+        </table>
+
+</div>
+<!-- End the table coding -->
+
+<!-- Navigation ber with pills/tab start -->
+        <div class="navigation_ber ">
+            <ul class="nav nav-pills">
+                <li class="nav-item" ><a data-toggle ="pill" class="active nav-link" href="#Edu">About Lima</a></li>
+                <li class="nav-item"><a  data-toggle="pill" class="nav-link" href="#Skill">Skill</a></li>
+                <li class="nav-item"><a  data-toggle="pill" class="nav-link" href="#Hobby">Hobby</a></li>
+            </ul>
+        </div>
+    
+        <div class="tab-content">
+            <div id="Edu" class="  tab-pane active "><p>Lima is a small girl .She read in clsaa seven. Lima is a small girl .She read in clsaa seven. The name Lima is a small girl .She read in clsaa seven. The name  The name of her institute is Dakshin Ghoneshyam School and collece.The institute campas is very well.But looking bad </p></div>
+            <div id="Skill" class="tab-pane fade"><p>She well in english But her math is very weak.So heLima is a small girl .She read in clsaa seven. The name Lima is a small girl .She read in clsaa seven. The name  daily goung cocing assumenda vitae quos provident fuga qui quae, laboriosam amet aut.</p></div>
+            <div id="Hobby" class="tab-pane fade"><p> Her hobby is gearding.Her do not habe any garding. Lima is a small girl .She read in clsaa seven. The name Lima is a small girl .She read in clsaa seven. The name Accusantium ab assumenda vitae quos provident fuga qui quae, laboriosam amet aut.</p></div>
+        </div>
+
+<!-- Navigation ber with pills/tab end -->
+
+    </div>
+    <div class="list_item">
+        <h2 class="text-White text-center bg-danger py-2 mb-0">All Group Member:</h2>
+        <ul class=" list-group">
+            <li class="list-group-item bg-primary text-white">Md Shafiul Islam</li>
+            <li class="list-group-item bg-secondary text-white" >Md Sohrab Hossain</li>
+            <li class="list-group-item bg-dark text-white">Md Pervez Hasan</li>
+            <li class="list-group-item bg-success text-white">Md Niaz Hasan</li>
+        </ul>
+        <a href="#" class="list-group-item bg-primary text-white text-center font-weight-bolder">Leader details</a>
+    </div>
+
+    <div class="container px-0">
+<div style=" background: rgb(191, 199, 202);">
+    <center> <i class="fas fa-arrow-down  fa-10x" style="height: 300px;"></i></center>
+    <center> <i class="fas fa-arrow-down  fa-10x" style="height: 300px;"></i></center>
+     <center><i class="fas fa-arrow-down  fa-10x" ></i></center>
+</div>
+
+<!-- Start the jumbotron coding -->     
+        <h1 class="bg-secondary p-4  text-uppercase text-center text-white devclass">Our all Devloper list:</h1>
+        <div class="jumbotron py-3 ">
+            <h2 class=" py-3 text-white text-center font-weight-bolder bg-primary">About: Md Shafiul Islam</h2>
+            <div class="row">
+                <div class="col-md-4 ">
+                    <img class="img-fluid rounded-circle p-2" src="img/shafiul.jpg" alt="This is a flower picture">
+                    <div class="btn-group justify-content-center mt-5">
+                        <button class="btn btn-outline-primary  ">Downlode CV</button>
+                        <button class="btn btn-outline-primary  ">Certificate D</button>
+                    </div>
+                </div>              
+                <div class="col-md-8 ">
+                    <p class="mb-0 text-muted" > My name is Shafiul Islam. I  read in Rangpur Polytchnic Institute.  I read in Rangpur Polytchnic Institute. The name of my department is Computer. I have a big future plan .I thik I must be success in my life. May Allah help me. My aim in life is a future Web designer and Devloper.My family also suport me .My brother also suport me for my success. I read in Rangpur Polytchnic Institute. The name of my department is Computer. I have a big future plan .I thik I must be success in my life. May Allah help me. My aim in life is a future Web designer and Devloper.My family also suport me .My brother also suport me for my success. I read in Rangpur Polytchnic Institute. The name of my department is Computer. I have a big future plan .I thik I must be success in my life. May Allah help me. My aim in life is a future Web designer and Devloper.My family also suport me .My brother also suport me for my success.The name of my department is Computer. I have a big future plan .I thik I must be success in my life. May Allah help me. My aim in life is a future Web designer and Devloper.My family also suport me .My brother also suport me for my success.</p>
+                <a href="#more" data-toggle="collapse" class="pb-4">Learn More</a>
+                <div id="more" class="collapse">
+                    <p>Now I am  Computer Enginner. I work in Fiberr.com. My main tergert is a full stack web devlopment. My all skill is html, css, bootstraps, javascipt,jquarry etc.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aut nostrum, culpa aliquid maxime dolor. Labore quos minus, delectus odio, eaque molestiae dolor cumque numquam nemo quis ea fuga perspiciatis?</p>
+                </div>
+                <div class="alert bg-danger alert-dismissible mt-3 mb-1 ">
+                    <button class="close" data-dismiss="alert">&times;</button>
+                   Visit my facebook page <a class="text-white" href="#">Click Here</a>
+                </div>
+                <div class="alert bg-secondary alert-dismissible ">
+                    <button class="close" data-dismiss="alert">&times;</button>
+                   Visit my instagram page <a class="text-white" href="#">Click Here</a>
+                </div>
+                </div>               
+            </div>    
+        </div>
+
+
+
+
+        <div class="jumbotron py-3 ">
+            <h2 class=" py-3 text-white text-center font-weight-bolder bg-primary">About: Md Soharb Hossain</h2>
+            <div class="row">
+                <div class="col-md-4 ">
+                    <img class="img-fluid rounded-circle p-2" src="img/soharb.jpg" alt="This is a flower picture">
+                    <div class="btn-group justify-content-center mt-5">
+                        <button class="btn btn-outline-primary  ">Downlode CV</button>
+                        <button class="btn btn-outline-primary  ">Certificate D</button>
+                    </div>
+                </div>              
+                <div class="col-md-8 ">
+                    <p class="mb-0 text-muted" > My name is Soharb hossain. I  read in Rangpur Polytchnic Institute.  I read in Rangpur Polytchnic Institute. The name of my department is Computer. I have a big future plan .I thik I must be success in my life. May Allah help me. My aim in life is a future Web designer and Devloper.My family also suport me .My brother also suport me for my success. I read in Rangpur Polytchnic Institute. The name of my department is Computer. I have a big future plan .I thik I must be success in my life. May Allah help me. My aim in life is a future Web designer and Devloper.My family also suport me .My brother also suport me for my success. I read in Rangpur Polytchnic Institute. The name of my department is Computer. I have a big future plan .I thik I must be success in my life. May Allah help me. My aim in life is a future Web designer and Devloper.My family also suport me .My brother also suport me for my success.The name of my department is Computer. I have a big future plan .I thik I must be success in my life. May Allah help me. My aim in life is a future Web designer and Devloper.My family also suport me .My brother also suport me for my success.</p>
+                <a href="#more" data-toggle="collapse" class="pb-4">Learn More</a>
+                <div id="more" class="collapse">
+                    <p>Now I am  Computer Enginner. I work in Fiberr.com. My main tergert is a full stack web devlopment. My all skill is html, css, bootstraps, javascipt,jquarry etc.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aut nostrum, culpa aliquid maxime dolor. Labore quos minus, delectus odio, eaque molestiae dolor cumque numquam nemo quis ea fuga perspiciatis?</p>
+                </div>
+                <div class="alert bg-danger alert-dismissible mt-3 mb-1 ">
+                    <button class="close" data-dismiss="alert">&times;</button>
+                   Visit my facebook page <a class="text-white" href="#">Click Here</a>
+                </div>
+                <div class="alert bg-secondary alert-dismissible ">
+                    <button class="close" data-dismiss="alert">&times;</button>
+                   Visit my instagram page <a class="text-white" href="#">Click Here</a>
+                </div>
+                </div>               
+            </div>    
+        </div>
+
+
+
+
+        <div class="jumbotron py-3 ">
+            <h2 class=" py-3 text-white text-center font-weight-bolder bg-primary">About: Md Pervez Hasan</h2>
+            <div class="row">
+                <div class="col-md-4 ">
+                    <img class="img-fluid rounded-circle p-2" src="img/parvez.jpg" alt="This is a flower picture">
+                    <div class="btn-group justify-content-center mt-5">
+                        <button class="btn btn-outline-primary  ">Downlode CV</button>
+                        <button class="btn btn-outline-primary  ">Certificate D</button>
+                    </div>
+                </div>
+               
+                <div class="col-md-8 ">
+                    <p class="mb-0 text-muted" > My name is Md Pervez Hasan. I  read in Rangpur Polytchnic Institute.  I read in Rangpur Polytchnic Institute. The name of my department is Computer. I have a big future plan .I thik I must be success in my life. May Allah help me. My aim in life is a future Web designer and Devloper.My family also suport me .My brother also suport me for my success. I read in Rangpur Polytchnic Institute. The name of my department is Computer. I have a big future plan .I thik I must be success in my life. May Allah help me. My aim in life is a future Web designer and Devloper.My family also suport me .My brother also suport me for my success. I read in Rangpur Polytchnic Institute. The name of my department is Computer. I have a big future plan .I thik I must be success in my life. May Allah help me. My aim in life is a future Web designer and Devloper.My family also suport me .My brother also suport me for my success.The name of my department is Computer. I have a big future plan .I thik I must be success in my life. May Allah help me. My aim in life is a future Web designer and Devloper.My family also suport me .My brother also suport me for my success.</p>
+                <a href="#more" data-toggle="collapse" class="pb-4">Learn More</a>
+                <div id="more" class="collapse">
+                    <p>Now I am  Computer Enginner. I work in Fiberr.com. My main tergert is a full stack web devlopment. My all skill is html, css, bootstraps, javascipt,jquarry etc.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aut nostrum, culpa aliquid maxime dolor. Labore quos minus, delectus odio, eaque molestiae dolor cumque numquam nemo quis ea fuga perspiciatis?</p>
+                </div>
+                <div class="alert bg-danger alert-dismissible mt-3 mb-1 ">
+                    <button class="close" data-dismiss="alert">&times;</button>
+                   Visit my facebook page <a class="text-white" href="#">Click Here</a>
+                </div>
+                <div class="alert bg-secondary alert-dismissible ">
+                    <button class="close" data-dismiss="alert">&times;</button>
+                   Visit my instagram page <a class="text-white" href="#">Click Here</a>
+                </div>
+                </div>               
+            </div>    
+        </div>
+
+
+
+
+        <div class="jumbotron py-3 mb-0 ">
+            <h2 class=" py-3 text-white text-center font-weight-bolder bg-primary">About: Md doal Islam</h2>
+            <div class="row">
+                <div class="col-md-4 ">
+                    <img class="img-fluid rounded-circle p-2" src="img/doal.jpg" alt="This is a flower picture">
+                    <div class="btn-group justify-content-center mt-5">
+                        <button class="btn btn-outline-primary  ">Downlode CV</button>
+                        <button class="btn btn-outline-primary  ">Certificate D</button>
+                    </div>
+                </div>
+               
+                <div class="col-md-8 ">
+                    <p class="mb-0 text-muted" > My name is Md doal Islam. I  read in Rangpur Polytchnic Institute.  I read in Rangpur Polytchnic Institute. The name of my department is Computer. I have a big future plan .I thik I must be success in my life. May Allah help me. My aim in life is a future Web designer and Devloper.My family also suport me .My brother also suport me for my success. I read in Rangpur Polytchnic Institute. The name of my department is Computer. I have a big future plan .I thik I must be success in my life. May Allah help me. My aim in life is a future Web designer and Devloper.My family also suport me .My brother also suport me for my success. I read in Rangpur Polytchnic Institute. The name of my department is Computer. I have a big future plan .I thik I must be success in my life. May Allah help me. My aim in life is a future Web designer and Devloper.My family also suport me .My brother also suport me for my success.The name of my department is Computer. I have a big future plan .I thik I must be success in my life. May Allah help me. My aim in life is a future Web designer and Devloper.My family also suport me .My brother also suport me for my success.</p>
+                <a href="#more" data-toggle="collapse" class="pb-4">Learn More</a>
+                <div id="more" class="collapse">
+                    <p>Now I am  Computer Enginner. I work in Fiberr.com. My main tergert is a full stack web devlopment. My all skill is html, css, bootstraps, javascipt,jquarry etc.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aut nostrum, culpa aliquid maxime dolor. Labore quos minus, delectus odio, eaque molestiae dolor cumque numquam nemo quis ea fuga perspiciatis?</p>
+                </div>
+                <div class="alert bg-danger alert-dismissible mt-3 mb-1 ">
+                    <button class="close" data-dismiss="alert">&times;</button>
+                   Visit my facebook page <a class="text-white" href="#">Click Here</a>
+                </div>
+                <div class="alert bg-secondary alert-dismissible ">
+                    <button class="close" data-dismiss="alert">&times;</button>
+                   Visit my instagram page <a class="text-white" href="#">Click Here</a>
+                </div>
+                </div>               
+            </div>    
+        </div>
+    </div>
+<!-- End the jumbotron coding -->
+
+
+</div>
+<div class="container">
+    <!-- start the form section -->
+<div class="form-section bg-secondary text-white p-4">
+    <div class="text-center  p-3 ">
+        <h2 class="font-weight-bolder text-white">Programing Lover</h2>
+    </div>
+    <form action="" class="w-50 m-auto was-validated">
+
+        <div class="form-group">
+            <label for="fullname">First name</label>
+            <input type="text" class="form-control" name="first name" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Please Enter Your full name as soon as possible</div>
+        </div>
+
+       <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" name="email" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Please Enter Your full name as soon as possible</div>
+        </div> 
+
+        
+        <div class="form-group">
+            <label for="textarea">Comment</label>
+            <textarea name="textarea" id="" cols="30" rows="10" class="form-control"> Describtion</textarea>
+        </div> 
+
+        <input type="submit" name="submit" class="btn btn-primary">
+        <input type="reset" name="reset" class="btn btn-primary">
+    </form>
+</div>
+<!-- End the fomt section -->
+<!-- This is pagination start -->
+<footer class="bg-info py-2">
+    <ul class="pagination justify-content-center mb-0 ">
+        <li class="page-item"><a href="#" class="page-link"> Prev</a></li>
+        <li class="page-item"><a href="#" class="page-link">1</a></li>
+        <li class="page-item"><a href="#" class="page-link">2</a></li>
+        <li class="page-item"><a href="#" class="page-link">3</a></li>
+        <li class="page-item"><a href="#" class="page-link">Next</a></li>
+    </ul>
+</footer>
+<!-- This is pagination End -->
+
+</div>
+
+
+<!-- The starting point of footer -->
+<footer>
+    <div class="  px-0" style="background: black;" >
+        <div class="row">
+                <div class="col-md-3 px-5">
+                    <h4 class="text-center text-white py-3">Our community</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-dark p-1"><a  class="list-link text-white " href="#"> Page</a></li>
+                        <li class="list-group-item bg-dark  p-1"><a   class="list-link text-white " href="#">Instagram link</a></li>
+                        <li  class="list-group-item bg-dark  p-1"><a   class="list-link text-white " href="#">Twitter  Accound</a> </li>
+                        <li  class="list-group-item bg-dark  p-1"><a  class="list-link text-white " href="#">Imo</a></li>
+                        <li class="list-group-item bg-dark  p-1"><a   class="list-link text-white " href="#"> Whatsup</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h4 class="p-3 text-center text-white">Skill</h4>
+                    <ul class="p-1">
+                        <li class="list-group-item bg-dark  p-1" ><a class="list-link text-white " href="#">HTML</a></li>
+                        <li class="list-group-item bg-dark  p-1" ><a class="list-link text-white" href="#">CSS</a></li>
+                        <li class="list-group-item bg-dark  p-1" ><a class="list-link text-white" href="#">Javascript</a></li>
+                        <li class="list-group-item bg-dark  p-1" ><a class="list-link text-white" href="#">Bootstarf</a></li>
+                        <li class="list-group-item bg-dark  p-1" ><a class="list-link text-white" href="#">j-Quarry</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class=" p-3 text-center text-white">Help</h4>
+                    <ul class="p-1">
+                        <li  class="list-group-item bg-dark  p-1"><a   class="list-link text-white " href="#"> FAQ</a></li>
+                        <li class="list-group-item bg-dark  p-1"><a   class="list-link text-white " href="#"> Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 p-3 text-white">
+                    <label >Country:</label><br>
+                    <select class="bg-dark text-white">
+                        <option>USA</option>
+                        <option>Indea</option>
+                        <option>Pakisthan</option>
+                        <option>Nepal</option>
+                        <option>Vutan</option>
+                        <option>Maldip</option>
+                        <option>Canada</option>
+                        <option selected>Bangladesh</option>
+                        <option>Gearmany</option>
+                    </select><br>
+                     <label class="mt-3">E-Mail:</label><br>
+                    <input style="width: 150px;" type="email"><br>
+                    <label class="mt-3">Comment:</label><br>
+                    <textarea >Write Your comment</textarea><br>
+                   <button class="btn bg-success text-white btn-outline-primary"> Submit</button>
+                </div>
+
+            </div>
+            <div >
+                <p class=" text-center text-danger">&#187; &#64; All right reserved by Devloper__Shafiul &#171;</p>
+            </div> 
+
+    </footer>
+    <!-- The end of the footer -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
